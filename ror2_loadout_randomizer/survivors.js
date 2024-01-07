@@ -1,9 +1,13 @@
 import { acrid } from "./survivors/acrid.js";
 import { artificer } from "./survivors/artificer.js";
+import { bandit } from "./survivors/bandit.js";
+import { captain } from "./survivors/captain.js";
 
 let survivor_list = [
     acrid,
-    artificer
+    artificer,
+    bandit,
+    captain
 ];
 
 export function randomizeSurvivor(seed) {

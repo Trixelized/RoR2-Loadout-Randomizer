@@ -5,15 +5,6 @@ export const artificer = {
     portrait: "Artificer.webp",
     skills: [
         {
-            type: "Passive",
-            choices: [
-                {
-                    name: "ENV Suit",
-                    icon: "ENV_Suit.webp"
-                }
-            ]
-        },
-        {
             type: "Primary",
             choices: [
                 {
