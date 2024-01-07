@@ -1,7 +1,7 @@
 export const acrid = {
     name: "Acrid",
     color: "#C9F24D",
-    img_dir: "./ror2_loadout_randomizer/images/survivors/acrid/",
+    img_dir: "ror2_loadout_randomizer/images/survivors/acrid/",
     portrait: "Acrid.webp",
     skills: [
         {

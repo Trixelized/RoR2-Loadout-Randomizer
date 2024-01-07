@@ -1,7 +1,7 @@
 export const artificer = {
     name: "Artificer",
     color: "#F7C1FD",
-    img_dir: "./ror2_loadout_randomizer/images/survivors/artificer/",
+    img_dir: "ror2_loadout_randomizer/images/survivors/artificer/",
     portrait: "Artificer.webp",
     skills: [
         {
