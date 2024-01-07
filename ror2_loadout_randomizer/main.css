@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+@font-face {
+    font-family: "Bombardier";
+    src: url("./font/Bombardier-Regular.ttf");
+}
 
 body {
     margin: 0px;
@@ -15,9 +18,9 @@ body {
 }
 
 .meta-ui {
-    width: 400px;
+    width: 300px;
     background-color: #000A;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -34,7 +37,8 @@ body {
     width: 64px;
     height: 64px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 3px;
+    background: linear-gradient(#303030, #1A1A1A);
 }
 
 .square-image.big {
@@ -47,19 +51,18 @@ body {
 }
 
 .text {
-    font-family: Ubuntu;
+    font-family: Bombardier;
     font-size: 20px;
     color: #FFF;
     text-align: left;
     vertical-align: middle;
-    filter: drop-shadow(0px 2px 2px #0006);
+    filter: drop-shadow(-2px 2px 2px #0006);
 }
 
 .text.side {
-    margin: auto 10px;
+    margin: 2px 10px;
 }
 
 .text.bold {
-    font-weight: bold;
     font-size: 24px;
 }

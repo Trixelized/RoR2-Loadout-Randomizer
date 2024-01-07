@@ -25,8 +25,13 @@ export function randomizeSurvivor(seed) {
     survivor_div.innerHTML += `
         <div class="inside-meta">
             <img class="square-image big" src="` + survivor.img_dir + survivor.portrait + `">
-            <div class="text survivor side bold" style="color: ` + survivor.color + `">
-                ` + survivor.name + `
+            <div>
+                <div class="text survivor side bold">
+                    Survivor:
+                </div>
+                <div class="text survivor side bold" style="color: ` + survivor.color + `">
+                    ` + survivor.name + `
+                </div>
             </div>
         </div>`;
 
@@ -42,8 +47,13 @@ export function randomizeSurvivor(seed) {
         skills_div.innerHTML += `
             <div class="inside-meta">
                 <img class="square-image" src="` + survivor.img_dir + choice.icon + `">
-                <div class="text skill side" style="color: ` + survivor.color + `">
-                    ` + choice.name + `
+                <div>
+                    <div class="text skill side">
+                        ` + skill.type + `:
+                    </div>
+                    <div class="text skill side" style="color: ` + survivor.color + `">
+                        ` + choice.name + `
+                    </div>
                 </div>
             </div>`;
 
