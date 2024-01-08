@@ -88,7 +88,7 @@ function fadeOutAndCallback() {
 
 window.addEventListener("keydown", function (e) {
     // If we press spacebar
-    if (e.key === " ") {
+    if (e.key == " ") {
         if (can_randomize == true) {
             // Reroll
             fadeOutAndCallback();

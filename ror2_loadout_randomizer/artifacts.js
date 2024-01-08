@@ -99,8 +99,8 @@ export function randomizeArtifacts(seed) {
     // Create the random function for the current seed
     let seeded_rng = new alea(seed);
 
-    // Randomly select 2-4 artifacts
-    let artifact_num = 2 + Math.floor(seeded_rng() * 3);
+    // Randomly select from 2 to 6 artifacts
+    let artifact_num = 2 + Math.floor(seeded_rng() * 5);
     let artifacts_picked = [];
     while (artifacts_picked.length < artifact_num) {
         let new_artifact = Math.floor(seeded_rng() * artifact_list.choices.length);
