@@ -9,6 +9,18 @@ body {
     background-color: #1A1A1A;
 }
 
+@media (max-width: 320px) {
+    .centerer {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 250px) {
+    .centerer {
+        transform: scale(0.5);
+    }
+}
+
 .centerer {
     width: 100vw;
     height: 100vh;
