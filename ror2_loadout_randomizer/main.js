@@ -26,7 +26,9 @@ function fadeIn() {
     // Opacity change 1
     tl.add({
         targets: ".meta-ui.survivor",
-        opacity: [0, 1]
+        easing: "easeInOutQuad",
+        opacity: [0, 1],
+        scaleX: [0, 1]
     });
 
     // Skill items
@@ -41,7 +43,9 @@ function fadeIn() {
     // Opacity change 2
     tl.add({
         targets: ".meta-ui.artifacts",
-        opacity: [0, 1]
+        easing: "easeInOutQuad",
+        opacity: [0, 1],
+        scaleX: [0, 1]
     });
 
     // Artifact items
@@ -65,7 +69,9 @@ function fadeIn() {
     // Opacity change 3
     tl.add({
         targets: ".meta-ui.misc",
-        opacity: [0, 1]
+        easing: "easeInOutQuad",
+        opacity: [0, 1],
+        scaleX: [0, 1]
     });
 
 }
@@ -76,7 +82,8 @@ function fadeOutAndCallback() {
         targets: ".meta-ui",
         easing: "easeInOutQuad",
         opacity: [1, 0],
-        duration: 250,
+        scaleX: [1, 0],
+        duration: 330,
         complete: function(anim) {
             randomizeFully();
             window.scrollTo(0, 0);
