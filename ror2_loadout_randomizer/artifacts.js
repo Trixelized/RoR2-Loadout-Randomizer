@@ -93,12 +93,14 @@ export function randomizeArtifacts(seed) {
     // Get and clear the divs
     let artifacts_div = document.getElementById("artifacts");
     artifacts_div.innerHTML = "";
+    let artifact_info_div = document.getElementById("artifact-info");
+    artifact_info_div.innerHTML = "";
 
     // Create the random function for the current seed
     let seeded_rng = new alea(seed);
 
-    // Randomly select 2-5 artifacts
-    let artifact_num = 2 + Math.floor(seeded_rng() * 4);
+    // Randomly select 2-4 artifacts
+    let artifact_num = 2 + Math.floor(seeded_rng() * 3);
     let artifacts_picked = [];
     while (artifacts_picked.length < artifact_num) {
         let new_artifact = Math.floor(seeded_rng() * artifact_list.choices.length);
@@ -114,6 +116,17 @@ export function randomizeArtifacts(seed) {
         let style_tag = "dark"
         if (artifacts_picked.includes(a)) {
             style_tag = "bright"
+            // Add the artifact descriptor
+            artifact_info_div.innerHTML += `
+                <div class="artifact-box">
+                    <div class="text side artifact-name">
+                        ` + artifact.name + `:
+                    </div>
+                    <div class="text side artifact-desc">
+                        ` + artifact.desc + `
+                    </div>
+                </div>
+            `
         }
 
         // Add the artifact element to the div

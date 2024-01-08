@@ -12,6 +12,7 @@
 
     <!-- Load libraries -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/lib/alea.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
     <!-- Load stylesheet and modules -->
     <link rel="stylesheet" href="ror2_loadout_randomizer/main.css">
@@ -19,17 +20,29 @@
 </head>
 
 <body>
-    <!-- This will list the survivor and their skills -->
-    <div class="base-ui">
-        <div class="meta-ui survivor">
-            <div id="survivor"></div>
-            <div id="skills" class="meta-ui-continue"></div>
-        </div>
-        <div class="meta-ui">
-            <div class="text bold inside-meta">
-                Artifacts
+    <div class="centerer">
+        <div class="base-ui">
+            <div class="meta-ui survivor" style="opacity: 0;">
+                <div id="survivor"></div>
+                <div id="skills" class="meta-ui-continue"></div>
             </div>
-            <div class="artifact-holder" id="artifacts"></div>
+            <div class="meta-ui artifacts" style="opacity: 0;">
+                <div class="text bold inside-meta">
+                    Artifacts
+                </div>
+                <div class="artifact-holder" id="artifacts"></div>
+                <div id="artifact-info"></div>
+            </div>
+
+            <div class="meta-ui misc" style="opacity: 0;">
+                <div class="text side artifact-desc inside-meta" style="text-align: center;">
+                    Website by Trixelized. Assets belong to Hopoo Games.
+                </div>
+                <div class="text bold inside-meta">
+                    <button id="reroll-button" class="text button red">Reroll?</button>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

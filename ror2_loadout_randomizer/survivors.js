@@ -71,7 +71,7 @@ export function randomizeSurvivor(seed) {
 
         // Add the skill element to the div
         skills_div.innerHTML += `
-            <div class="inside-meta">
+            <div class="inside-meta skillitem">
                 <img
                     class="square-image"
                     src="` + survivor.img_dir + choice.icon + `"
