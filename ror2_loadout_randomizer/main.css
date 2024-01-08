@@ -12,19 +12,22 @@ body {
 .base-ui {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: start;
     gap: 15px;
     padding: 15px;
 }
 
 .meta-ui {
-    width: 300px;
     background-color: #000A;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 15px;
+}
+
+.meta-ui.survivor {
+    width: 300px;
 }
 
 .meta-ui-continue {
@@ -42,8 +45,28 @@ body {
 }
 
 .square-image.big {
-    width: 128px;
-    height: 128px;
+    width: 96px;
+    height: 96px;
+}
+
+.artifact-holder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 256px;
+}
+
+.artifact-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.artifact-image.bright {
+    filter: brightness(100%);
+}
+
+.artifact-image.dark {
+    filter: brightness(20%);
 }
 
 .inside-meta {

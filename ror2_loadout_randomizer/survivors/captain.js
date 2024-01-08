@@ -45,7 +45,7 @@ export const captain = {
             ]
         },
         {
-            type: "Misc",
+            type: "Misc 1",
             choices: [
                 {
                     name: "Beacon: Healing",
@@ -66,7 +66,7 @@ export const captain = {
             ]
         },
         {
-            type: "Misc",
+            type: "Misc 2",
             choices: [
                 {
                     name: "Beacon: Healing",
