@@ -116,12 +116,18 @@ body {
 
 .text.artifact-name {
     color: #e7c7e7;
+    font-size: 20px;
 }
 
 .text.artifact-desc {
     color: #808080;
+    font-size: 18px;
+}
+
+.text.credits {
+    color: #808080;
 }
 
 .artifact-box {
-    padding: 5px;
+    padding: 2.5px;
 }
